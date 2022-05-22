@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>我的第一节javaScrpit课</title>
+</head>
+<body>
+    <script>
+        function person(name,age,gander){
+           this.name = name;
+           this.age = age; 
+           this.gander =gander;
+            
+        }
+        person.prototype.sayname = function(){
+            console.log("大家好！我的名字叫"+this.name)
+        }
+      var  name= prompt("请输入姓名");
+      
+        var per = new person(name,26,"男");
+        // var per1 = new person("猪八戒",28,"男");
+      
+       per.sayname();
+    //    per1.sayname();
+       per=null;
+    //    per1=null;
+    </script>
+   <p class="cc">oksfffffffffff革ffffffffffff</p>
+</body>
+</html>
